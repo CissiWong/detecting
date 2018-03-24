@@ -1,7 +1,7 @@
 import React from "react"
+import Header from "components/header/header.js"
 import StackedBarChart from "./chart.js"
 import DayView from "./dayview.js"
-import Header from "./header.js"
 
 import data from "../data.json"
 

@@ -1,0 +1,21 @@
+.header-banner {
+  display: flex;
+}
+
+.banner-error {
+  display: flex;
+  background-color: #f15c64;
+  max-height: 50px;
+  width: 100%;
+  margin: 40px 0 0 0;
+}
+
+.banner-error p {
+  padding: 0 10px 0 10px;
+}
+
+.logo {
+  margin: -40px 0 0 0;
+  z-index: 1;
+  height: 200px;
+}

@@ -1,12 +1,11 @@
 import React from "react"
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from "recharts"
-// import DayView from "./dayview.js"
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts"
+import { PropTypes } from "prop-types"
 
 export default class StackedBarChart extends React.Component {
 
   onBarClick = index => {
     this.props.handleBarClick(index)
-    console.log("Bar click", index)
   }
 
   render() {
@@ -34,9 +33,13 @@ export default class StackedBarChart extends React.Component {
           <Bar
             onClick={this.onBarClick}
             dataKey="high"
-            fill="#ffc658" />
+            fill="#f15c64" />
         </BarChart>
       </div>
     )
   }
+}
+
+StackedBarChart.propTypes = {
+  data: PropTypes.arr
 }

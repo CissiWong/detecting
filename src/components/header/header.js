@@ -7,11 +7,17 @@ import "./header.css"
 export default class Header extends React.Component {
   render() {
     return (
-      <div className="header-banner">
+      <div className="banner">
         <div className="banner-error">
           <img className="logo" src={logo} alt="detectify logo alien creature peaking out from a cloud" />
-          <p>Total critical errors: {this.props.high}</p>
-          <button>Resolve now</button>
+          <div className="banner-text">
+            <p>Critical errors: {this.props.high}</p>
+          </div>
+          <button className="resolve-btn">
+            <a href="https://detectify.com/" alt="link to detectify" target="_blank" rel="noopener norefferer">
+              <p>Resolve now</p>
+            </a>
+          </button>
         </div>
       </div>
     )

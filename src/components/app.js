@@ -1,7 +1,7 @@
 import React from "react"
 import Header from "components/header/header.js"
-import StackedBarChart from "./chart.js"
-import DayView from "./dayview.js"
+import DayView from "components/dayview/dayview.js"
+import StackedBarChart from "components/chart/chart.js"
 
 import data from "../data.json"
 
@@ -29,12 +29,14 @@ class App extends React.Component {
             high={this.state.dayview.high} />
         </header>
         <main className="chart-section">
-          <div>
+          <div className="barchart">
             <StackedBarChart
+              width="75%"
+              height="50%"
               data={this.state.data}
               handleBarClick={this.handleBarClick} />
           </div>
-          <section>
+          <section className="dayview-container">
             {this.state.dayview && this.state.data.filter(x =>
               x.date === this.state.dayview.date).map(item => {
               return <DayView

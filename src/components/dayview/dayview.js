@@ -1,14 +1,16 @@
 import React from "react"
 import { PropTypes } from "prop-types"
+import "./dayview.css"
 
 export default class DayView extends React.Component {
   render() {
     return (
-      <div>
-        <h1>Date: {this.props.date}</h1>
-        <h1>High: {this.props.high}</h1>
-        <h1>Medium: {this.props.medium}</h1>
-        <h1>Low: {this.props.low}</h1>
+      <div className="dayview-text">
+        <h3>Daily overview</h3>
+        <p>Date: {this.props.date}</p>
+        <p>High: {this.props.high}</p>
+        <p>Medium: {this.props.medium}</p>
+        <p>Low: {this.props.low}</p>
       </div>
     )
   }

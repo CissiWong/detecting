@@ -14,9 +14,27 @@ body {
   font-family: sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: CircularStd-Black;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
-    font-family: CircularStd-Black;
-    color: #fff;
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.625em;
+}
+
+h3 {
+  font-size: 1.375em;
+}
+
+h4 {
+  font-size: 1.125em;
 }
 
 p, a {
@@ -24,20 +42,6 @@ p, a {
   font-weight: 300;
   color: #fff;
   margin: 0;
-}
-
-
-.chart-section {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#container {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 10px;
-  width: 800px;
-  height: 800px;
-  background-color: #fff;
+  font-size: 1em;
+  line-height: 1.25em;
 }

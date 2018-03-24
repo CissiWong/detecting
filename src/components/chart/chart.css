@@ -1,0 +1,13 @@
+.barchart {
+  width: 400px;
+  height: 400px;
+  padding: 5%;
+  margin: 10% auto 10% auto;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.chart-section {
+  display: flex;
+  flex-wrap: wrap;
+}

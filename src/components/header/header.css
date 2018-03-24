@@ -11,11 +11,15 @@
 }
 
 .banner-error p {
-  padding: 0 10px 0 10px;
+  padding: 2px 10px 0 10px;
+}
+
+.banner-error h2 {
+  padding: 2px 10px 0 10px;
 }
 
 .logo {
-  margin: -40px 0 0 0;
+  margin: -25px 0 0 10px;
   z-index: 1;
-  height: 200px;
+  height: 150px;
 }

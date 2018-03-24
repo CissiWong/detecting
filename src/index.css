@@ -1,7 +1,27 @@
+@font-face {
+font-family: CircularStd-Black;
+src: url("./fonts/CircularStd-Black.otf");
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+}
+
+h1 {
+    font-family: CircularStd-Black;
+}
+
+p, a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+
+.chart-section {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #container {

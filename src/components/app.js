@@ -1,4 +1,5 @@
 import React from "react"
+import Button from "components/button/button.js"
 import Header from "components/header/header.js"
 import DayView from "components/dayview/dayview.js"
 import StackedBarChart from "components/chart/chart.js"
@@ -37,6 +38,7 @@ class App extends React.Component {
               handleBarClick={this.handleBarClick} />
           </div>
           <section className="dayview-container">
+            <h3>Daily overview</h3>
             {this.state.dayview && this.state.data.filter(x =>
               x.date === this.state.dayview.date).map(item => {
               return <DayView
@@ -47,6 +49,8 @@ class App extends React.Component {
                 medium={item.medium} />
             })
             }
+            <Button />
+            <Button />
           </section>
         </main>
       </div>

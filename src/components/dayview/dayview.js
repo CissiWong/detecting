@@ -6,7 +6,6 @@ export default class DayView extends React.Component {
   render() {
     return (
       <div className="dayview-text">
-        <h3>Daily overview</h3>
         <p>Date: {this.props.date}</p>
         <p>High: {this.props.high}</p>
         <p>Medium: {this.props.medium}</p>

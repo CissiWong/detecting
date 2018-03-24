@@ -21,7 +21,11 @@
 .banner-text {
   display: flex;
   padding: 13px 45px 0 0;
-  width: 170px;
+  width: 165px;
+}
+.banner-text p {
+  font-weight: 400;
+  color: #fff;
 }
 
 .resolve-btn {

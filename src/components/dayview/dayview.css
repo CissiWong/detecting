@@ -1,3 +1,19 @@
 .dayview-container {
   display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 350px;
+  height: 350px;
+  padding: 5%;
+  margin: 0 auto 20% auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dayview-container h3 {
+  margin: 20px 20px 20px 20px;
+}
+
+.dayview-text p {
+  margin: 0 20px 20px 20px;
+  font-weight: 400;
 }

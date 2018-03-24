@@ -17,7 +17,7 @@ export default class StackedBarChart extends React.Component {
           margin={
             {
               top: 0,
-              right: 0,
+              right: 20,
               left: 0,
               bottom: 0
             }

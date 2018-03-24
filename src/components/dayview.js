@@ -1,8 +1,8 @@
 import React from "react"
+import { PropTypes } from "prop-types"
 
 export default class DayView extends React.Component {
   render() {
-    console.log("props in dayview", this.props.high)
     return (
       <div>
         <h1>High:{this.props.high}</h1>
@@ -12,4 +12,11 @@ export default class DayView extends React.Component {
       </div>
     )
   }
+}
+
+DayView.propTypes = {
+  high: PropTypes.number,
+  low: PropTypes.number,
+  medium: PropTypes.number,
+  date: PropTypes.string.isRequired
 }

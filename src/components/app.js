@@ -1,7 +1,7 @@
 import React from "react"
 import StackedBarChart from "./chart.js"
-// import data from "../data.json"
 import DayView from "./dayview.js"
+
 import data from "../data.json"
 
 class App extends React.Component {
@@ -9,21 +9,18 @@ class App extends React.Component {
     super(props)
     this.state = {
       data,
-      dayview: {}
+      dayview: []
     }
   }
 
   handleBarClick = index => {
     const singleDay = index
-    // console.log("from app", singleDay)
     this.setState({
       dayview: singleDay
     })
   }
 
   render() {
-    console.log("dayview date", this.state.dayview.date)
-    console.log("data date", this.state.data.date)
     return (
       <main>
         <div>
@@ -32,14 +29,14 @@ class App extends React.Component {
             handleBarClick={this.handleBarClick} />
         </div>
         <section>
-          {this.state.data.filter((date, index) => (
-            this.state.data.date === this.state.dayview.date)).map(day => {
+          {this.state.dayview && this.state.data.filter(x =>
+            x.date === this.state.dayview.date).map(item => {
             return <DayView
-              key={day.index}
-              date={day.date}
-              high={day.high}
-              low={day.low}
-              medium={day.medium} />
+              key={item.index}
+              date={item.date}
+              high={item.high}
+              low={item.low}
+              medium={item.medium} />
           })
           }
         </section>

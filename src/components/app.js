@@ -35,7 +35,8 @@ class App extends React.Component {
               width="75%"
               height="50%"
               data={this.state.data}
-              handleBarClick={this.handleBarClick} />
+              handleBarClick={this.handleBarClick}
+              handleMouseLeave={this.handleMouseLeave} />
           </div>
           <section className="dayview-container">
             <h3>Daily overview</h3>

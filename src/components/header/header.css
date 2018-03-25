@@ -23,9 +23,34 @@
   padding: 13px 45px 0 0;
   width: 165px;
 }
-.banner-text p {
+
+.text {
   font-weight: 400;
   color: #fff;
+}
+
+.blink {
+  display: block;
+  font-weight: 400;
+  color: #fff;
+  animation: blink 1s linear;
+  animation-iteration-count: 3;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes blink {
+    0%  {
+      opacity: 0;
+    }
+    50%  {
+      opacity: .5;
+    }
+    100%{
+      opacity: 1;
+    }
 }
 
 .resolve-btn {

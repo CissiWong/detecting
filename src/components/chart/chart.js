@@ -39,5 +39,5 @@ export default class StackedBarChart extends React.Component {
 }
 
 StackedBarChart.propTypes = {
-  data: PropTypes.arr
+  data: PropTypes.array
 }

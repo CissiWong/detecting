@@ -45,3 +45,9 @@ p, a {
   font-size: 1em;
   line-height: 1.25em;
 }
+
+.download-btn	{
+  position:fixed;
+  top:2%;
+  right:2%; 
+}

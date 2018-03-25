@@ -1,5 +1,6 @@
 import React from "react"
-import Button from "components/button/button.js"
+import DownloadButton from "components/download-button/download-button.js"
+import PrintButton from "components/print-button/print-button.js"
 import Header from "components/header/header.js"
 import DayView from "components/dayview/dayview.js"
 import StackedBarChart from "components/chart/chart.js"
@@ -50,8 +51,8 @@ class App extends React.Component {
                 medium={item.medium} />
             })
             }
-            <Button />
-            <Button />
+            <DownloadButton />
+            <PrintButton />
           </section>
         </main>
       </div>

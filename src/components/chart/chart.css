@@ -1,3 +1,8 @@
+.chart-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .barchart {
   width: 350px;
   height: 350px;
@@ -10,9 +15,4 @@
 
 .recharts-surface {
   cursor: pointer;
-}
-
-.chart-section {
-  display: flex;
-  flex-wrap: wrap;
 }

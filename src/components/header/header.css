@@ -8,7 +8,6 @@
   display: flex;
   justify-content: space-between;
   margin: 0 0 10px 0;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .banner-error {
@@ -19,7 +18,9 @@
   max-height: 50px;
   width: 100%;
   margin: 40px 0 0 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 
 .banner-text {
   padding: 13px 0 13px 0;
@@ -64,6 +65,7 @@
   margin: 1%;
   border: 1px solid #fff;
   background-color: #f15c64;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
 }
 

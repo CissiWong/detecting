@@ -40,6 +40,7 @@ class App extends React.Component {
               handleMouseLeave={this.handleMouseLeave} />
           </div>
           <section className="dayview-container">
+            <div className="dayview-box">
             <h3>Daily overview</h3>
             {this.state.dayview && this.state.data.filter(x =>
               x.date === this.state.dayview.date).map(item => {
@@ -53,6 +54,7 @@ class App extends React.Component {
             }
             {/* <DownloadButton />
             <PrintButton /> */}
+            </div>
           </section>
         </main>
       </div>

@@ -88,6 +88,7 @@ p, a {
   }
 
   .resolve-btn p {
+    /* padding: 5px 15px 24px 15px; */
     font-size: 1.25em;
   }
 
@@ -121,20 +122,32 @@ p, a {
   h3 {
     font-size: 2em;
   }
+
+  .banner {
+    justify-content: space-around;
+    margin: 50px auto;
+    height: auto;
+  }
+
   .banner-error {
     max-height: 75px;
   }
+
+  .banner-text {
+    padding: 19px 0 13px 0px;
+    width: 300px;
+  }
+
   .logo {
     height: 250px;
+    margin: -59px 0 0 20px;
   }
-  .banner-text {
-    padding: 15px 0 13px 0;
-    width: 250px;
-  }
+
   .barchart, .dayview-container {
     margin: 15% auto 20% auto;
   }
+
   .resolve-btn {
-    padding: 5px 15px 24px 15px;
+    text-align: center;
   }
 }

@@ -1,6 +1,4 @@
 import React from "react"
-import DownloadButton from "components/download-button/download-button.js"
-import PrintButton from "components/print-button/print-button.js"
 import Header from "components/header/header.js"
 import DayView from "components/dayview/dayview.js"
 import StackedBarChart from "components/chart/chart.js"
@@ -41,19 +39,17 @@ class App extends React.Component {
           </div>
           <section className="dayview-container">
             <div className="dayview-box">
-            <h3>Daily overview</h3>
-            {this.state.dayview && this.state.data.filter(x =>
-              x.date === this.state.dayview.date).map(item => {
-              return <DayView
-                key={item.date}
-                date={item.date}
-                high={item.high}
-                low={item.low}
-                medium={item.medium} />
-            })
-            }
-            {/* <DownloadButton />
-            <PrintButton /> */}
+              <h3>Daily overview</h3>
+              {this.state.dayview && this.state.data.filter(x =>
+                x.date === this.state.dayview.date).map(item => {
+                return <DayView
+                  key={item.date}
+                  date={item.date}
+                  high={item.high}
+                  low={item.low}
+                  medium={item.medium} />
+              })
+              }
             </div>
           </section>
         </main>

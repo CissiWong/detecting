@@ -26,8 +26,8 @@ export default class Header extends React.Component {
         <div className="banner-error">
           <img className="logo" src={logo} alt="detectify logo alien creature peaking out from a cloud" />
           <div className="banner-text">
-            <p className={this.state.blinkAnimation ? "blink" : "hidden"}>Critical errors: {this.props.high}</p>
-            <p className={!this.state.blinkAnimation ? "blink" : "hidden"}>Critical errors: {this.props.high}</p>
+            <h4 className={this.state.blinkAnimation ? "blink" : "hidden"}>Critical errors: {this.props.high}</h4>
+            <h4 className={!this.state.blinkAnimation ? "blink" : "hidden"}>Critical errors: {this.props.high}</h4>
           </div>
           <button className="resolve-btn">
             <a target="_blank" rel="noopener noreferrer" href="https://detectify.com/" alt="link to detectify">

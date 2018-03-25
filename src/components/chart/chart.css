@@ -16,3 +16,12 @@
 .recharts-surface {
   cursor: pointer;
 }
+
+.recharts-cartesian-axis-tick {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #202327;
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.25em;
+}

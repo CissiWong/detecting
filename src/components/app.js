@@ -44,15 +44,15 @@ class App extends React.Component {
             {this.state.dayview && this.state.data.filter(x =>
               x.date === this.state.dayview.date).map(item => {
               return <DayView
-                key={item.index}
+                key={item.date}
                 date={item.date}
                 high={item.high}
                 low={item.low}
                 medium={item.medium} />
             })
             }
-            <DownloadButton />
-            <PrintButton />
+            {/* <DownloadButton />
+            <PrintButton /> */}
           </section>
         </main>
       </div>

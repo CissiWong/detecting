@@ -31,7 +31,7 @@ export default class Header extends React.Component {
           </div>
           <button className="resolve-btn">
             <a target="_blank" rel="noopener noreferrer" href="https://detectify.com/" alt="link to detectify">
-              <p>Resolve now</p>
+              <p>Resolve</p>
             </a>
           </button>
         </div>

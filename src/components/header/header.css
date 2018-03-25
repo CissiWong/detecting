@@ -6,12 +6,15 @@
 
 .banner {
   display: flex;
+  justify-content: space-between;
   margin: 0 0 10px 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .banner-error {
   display: flex;
+  justify-content: center;
+  align-content: center;
   background-color: #f15c64;
   max-height: 50px;
   width: 100%;
@@ -19,9 +22,9 @@
 }
 
 .banner-text {
-  display: flex;
-  padding: 13px 45px 0 0;
-  width: 170px;
+  padding: 13px 0 13px 0;
+  width: 200px;
+  text-align: center;
 }
 
 .banner-text p {
@@ -58,36 +61,34 @@
 }
 
 .resolve-btn {
-  margin: 5px;
+  margin: 1%;
   border: 1px solid #fff;
   background-color: #f15c64;
   cursor: pointer;
 }
 
-.resolve-btn:hover {
-  border: 1px solid #fff;
-  background-color: #e5575e;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  cursor: pointer;
-}
-
 .resolve-btn p {
   font-family: CircularStd-Black;
-  padding: 0;
+  font-size: 1.25em;
   color: #fff;
   text-decoration: none;
+}
+
+.resolve-btn a {
+  text-decoration: none;
+}
+
+.resolve-btn:hover {
+  border: 1px solid #fff;
+  background-color: #f26c73;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .resolve-btn p:hover {
-  font-size: 1em;
-  padding: 0;
-  color: #fff;
-  text-decoration: none;
+  font-size: 1.25em;
+  padding: 2%;
 }
 
 .resolve-btn a:hover {
-  text-decoration: none;
-}
-.resolve-btn a {
   text-decoration: none;
 }

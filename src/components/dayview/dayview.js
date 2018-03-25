@@ -13,7 +13,7 @@ export default class DayView extends React.Component {
     return (
       <div className="dayview-text">
         <div>
-          <p>Date: {this.props.date}</p>
+          <p className="date-text">Date: {this.props.date}</p>
         </div>
         <div>
           <p><img className="icon-high" src={high} alt="icon for high" />High: {this.props.high}</p>

@@ -57,7 +57,7 @@ p, a {
   }
 
   .resolve-btn {
-    margin: 1% 1% 1% 50%;
+    margin: 1% 1% 1% 40%;
   }
 
   .banner-text {
@@ -84,11 +84,10 @@ p, a {
 
   .resolve-btn {
     padding: 5px 15px 24px 15px;
-    margin: 1% 1% 1% 60%;
+    margin: 1% 1% 1% 50%;
   }
 
   .resolve-btn p {
-    /* padding: 5px 15px 24px 15px; */
     font-size: 1.25em;
   }
 
@@ -110,6 +109,15 @@ p, a {
   .dayview-container {
     height: 450px;
     width: 45%;
+  }
+
+  .recharts-surface {
+    height: 400px;
+    width: 115%;
+  }
+  .dayview-box {
+    height: 400px;
+    width: 90%;
   }
 }
 
@@ -143,11 +151,8 @@ p, a {
     margin: -59px 0 0 20px;
   }
 
-  .barchart, .dayview-container {
-    margin: 15% auto 20% auto;
-  }
-
   .resolve-btn {
     text-align: center;
   }
+
 }
